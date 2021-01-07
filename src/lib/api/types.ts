@@ -21,6 +21,7 @@ export interface AttributeListResponse {
 }
 
 export interface AttributeResponse {
+  name: string;
   base: number;
   modifier: number;
 }
