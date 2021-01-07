@@ -24,3 +24,5 @@ npm-debug.log*
 # local env files
 .env.local
 .env.development.local
+
+.eslintcache
