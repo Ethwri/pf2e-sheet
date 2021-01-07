@@ -1,0 +1,37 @@
+.health-hotbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  background-color: silver;
+  height: 50px;
+  width: 50%;
+}
+
+.healthbar {
+  display: flex;
+  position: relative;
+  max-width: 100%;
+}
+
+.healthbar::before {
+  content: '';
+  background-color: red;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  left: 0;
+  height: 4px;
+  width: 100%;
+}
+.current-health {
+  background-color: green;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  left: 0;
+  height: 4px;
+  width: 50%;
+  z-index: 1;
+  transition: 0.4s ease;
+}
