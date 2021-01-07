@@ -1,6 +1,6 @@
 export interface CharectarResponse {
   levelzero: LevelZeroResponse;
-  attributes: AttributeListResponse;
+  attributes: AttributeResponse[];
 }
 
 export interface LevelZeroResponse {
@@ -9,15 +9,6 @@ export interface LevelZeroResponse {
   background: string;
   class: string;
   experience: number;
-}
-
-export interface AttributeListResponse {
-  str: AttributeResponse;
-  dex: AttributeResponse;
-  con: AttributeResponse;
-  int: AttributeResponse;
-  wis: AttributeResponse;
-  cha: AttributeResponse;
 }
 
 export interface AttributeResponse {

@@ -4,7 +4,7 @@ const http = require('http');
 const strMock = {
   name: 'str',
   base: 10,
-  modifier: 3
+  modifier: 5
 };
 
 const dexMock = {
@@ -37,21 +37,13 @@ const chaMock = {
   modifier: 2
 };
 
-const attribute = {
-  str: strMock,
-  dex: dexMock,
-  con: conMock,
-  int: intMock,
-  wis: wisMock,
-  cha: chaMock
-};
-
+const attribute = [strMock, dexMock, conMock, intMock, wisMock, chaMock];
 const requestListener = (req, res) => {
   res.setHeader('Access-Control-Allow-Origin', '*');
   switch (req.url) {
     case '/attributes':
       res.writeHead(200, { 'Content-Type': 'application/json' });
-      res.write(JSON.stringify(strMock));
+      res.write(JSON.stringify(attribute));
       res.end();
       break;
     default:
