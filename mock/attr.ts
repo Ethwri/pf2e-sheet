@@ -1,37 +1,37 @@
 export const str = {
   name: 'str',
-  base: 10,
-  modifier: 5
+  base: 16,
+  modifier: 3
 };
 
 export const dex = {
   name: 'dex',
-  base: 10,
+  base: 14,
   modifier: 2
 };
 
 export const con = {
   name: 'con',
-  base: 10,
+  base: 14,
   modifier: 2
 };
 
 export const int = {
   name: 'int',
-  base: 10,
-  modifier: 2
+  base: 7,
+  modifier: -2
 };
 
 export const wis = {
   name: 'wis',
-  base: 10,
-  modifier: 2
+  base: 9,
+  modifier: -1
 };
 
 export const cha = {
   name: 'cha',
-  base: 10,
-  modifier: 2
+  base: 16,
+  modifier: 3
 };
 
 export const attributes = [str, dex, con, int, wis, cha];

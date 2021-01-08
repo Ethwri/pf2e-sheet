@@ -6,9 +6,9 @@ export interface CharectarResponse {
 
 export interface LevelZeroResponse {
   name: string;
-  ancestery: string;
-  background: string;
-  class: string;
+  ancestery: raceOptions;
+  background: BackgroundOptions;
+  class: ClassOptions;
   experience: number;
 }
 
@@ -28,4 +28,38 @@ export interface SkillResponse {
   skill: string;
   attr: AttributeResponse;
   proficiency: number;
+}
+
+export enum raceOptions {
+  HUMAN = 'Human',
+  DWARF = 'Dwarf',
+  ELF = 'Elf',
+  GOBLIN = 'Goblin',
+  GNOME = 'Gnome',
+  HALFING = 'Halfling'
+}
+
+export enum BackgroundOptions {
+  TRIBAL = 'Tribal',
+  MARINE = 'Marine',
+  WANDERING = 'Wandering',
+  RURAL = 'Rural',
+  VILLAGE = 'Village',
+  URBAN = 'Urban',
+  CASTLE = 'Castle',
+  OUTLAW = 'Outlaw'
+}
+
+export enum ClassOptions {
+  BARBARIAN = 'Barbarian',
+  BARD = 'Bard',
+  CLERIC = 'Cleric',
+  DRUID = 'Druid',
+  FIGHTER = 'Fighter',
+  MONK = 'Monk',
+  PALADIN = 'Paladin',
+  RANGER = 'Ranger',
+  ROGUE = 'Rogue',
+  SORCERER = 'Sorcerer',
+  WIZARD = 'Wizard'
 }
