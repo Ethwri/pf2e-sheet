@@ -1,10 +1,13 @@
 import * as React from 'react';
+import { SkillResponse } from 'src/lib/api/types';
 
-export default function IndivSkills() {
+export default function IndivSkills(props: SkillResponse) {
   return (
     <>
-      <text>Athletics</text>
-      <text>Key Ability</text>
+      <text>{props.skill}</text>
+      <text>
+        {props.attr.name} {props.attr.modifier}
+      </text>
       <div>
         <input type="checkbox" id="T"></input>
         <input type="checkbox" id="E"></input>
