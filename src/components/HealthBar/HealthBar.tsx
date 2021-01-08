@@ -40,7 +40,6 @@ function HealthBar() {
       <small>
         {current}/{max}
       </small>
-      {/* current needs to change the width of the css style , maximum is = ancestry HP + Class HP + (CONmod*lvl)*/}
     </div>
   );
 }
