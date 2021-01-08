@@ -3,6 +3,7 @@ import { skills } from './skills';
 import { attributes } from './attr';
 import { hitpoints } from './hitpoints';
 import { levelzero } from './levelzero';
+import { SavingThrows } from './savingThrows';
 
 const requestListener = (
   req: http.IncomingMessage,
@@ -28,6 +29,11 @@ const requestListener = (
     case '/levelzero':
       res.writeHead(200, { 'Content-Type': 'application/json' });
       res.write(JSON.stringify(levelzero));
+      res.end();
+      break;
+    case '/SavingThrows':
+      res.writeHead(200, { 'Content-Type': 'application/json' });
+      res.write(JSON.stringify(SavingThrows));
       res.end();
       break;
     default:

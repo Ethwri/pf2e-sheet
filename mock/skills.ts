@@ -88,7 +88,7 @@ const Thievery: SkillResponse = {
   proficiency: 1
 };
 
-export const skills = [
+export const skills: SkillResponse[] = [
   Acrobatics,
   Arcana,
   Athletics,
