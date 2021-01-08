@@ -5,7 +5,9 @@ export default function IndivSkills(props: SkillResponse) {
   return (
     <>
       <text>{props.skill}</text>
-      <text>{props.attr}</text>
+      <text>
+        {props.attr.name} {props.attr.modifier}
+      </text>
       <div>
         <input type="checkbox" id="T"></input>
         <input type="checkbox" id="E"></input>
