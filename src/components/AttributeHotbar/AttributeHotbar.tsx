@@ -25,8 +25,9 @@ export default class AttributeHotbar extends React.Component {
   render() {
     return (
       <div className="attribute-hotbar">
-        {this.state.data.map((attribute: AttributeResponse) => (
+        {this.state.data.map((attribute: AttributeResponse, index: number) => (
           <Attributes
+            key={index}
             name={attribute.name.toUpperCase()}
             base={attribute.base}
             modifier={attribute.modifier}
