@@ -1,6 +1,7 @@
 export interface CharectarResponse {
   levelzero: LevelZeroResponse;
   attributes: AttributeResponse[];
+  skills: SkillResponse[];
 }
 
 export interface LevelZeroResponse {
@@ -17,8 +18,10 @@ export interface AttributeResponse {
   modifier: number;
 }
 
-export interface SkillListResponse {
-  acrobatics: SkillListResponse;
+export interface HitpointsResponse {
+  current: number;
+  max: number;
+  temp: number;
 }
 
 export interface SkillResponse {
