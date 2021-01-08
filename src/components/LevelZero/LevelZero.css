@@ -1,0 +1,14 @@
+.level-zero {
+  width: 25%;
+  height: 350px;
+  background-color: rgb(236, 161, 131);
+}
+
+.select-dropdown {
+  width: 80%;
+}
+
+.heritage-dropdown {
+  display: flex;
+  align-content: flex-end;
+}

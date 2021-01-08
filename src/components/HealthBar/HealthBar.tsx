@@ -9,7 +9,7 @@ export default function HealthBar() {
             <div className="current-health"></div>
         </div>
         <small>current/maximum</small>
-        {/* current needs to change the width of the css style */}
+        {/* current needs to change the width of the css style , maximum is = ancestry HP + Class HP + (CONmod*lvl)*/}
 
     </div>
     )
