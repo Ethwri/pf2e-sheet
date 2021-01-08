@@ -2,6 +2,9 @@ export interface CharectarResponse {
   levelzero: LevelZeroResponse;
   attributes: AttributeResponse[];
   skills: SkillResponse[];
+  hitpoints: HitpointsResponse;
+  savingThrows: SkillResponse[];
+  acdcini: acdcinitive;
 }
 
 export interface LevelZeroResponse {
@@ -28,6 +31,12 @@ export interface SkillResponse {
   skill: string;
   attr: AttributeResponse;
   proficiency: number;
+}
+
+export interface acdcinitive {
+  ac: number;
+  dc: number;
+  ini: number;
 }
 
 export enum raceOptions {
