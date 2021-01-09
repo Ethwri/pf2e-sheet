@@ -6,6 +6,8 @@ import {
   ClassOptions
 } from '../../../src/lib/api/types';
 import './LevelZero.css';
+import './LevelList/LevelList';
+import LevelList from './LevelList/LevelList';
 
 export default function LevelZero() {
   const [name, setName] = React.useState('');
@@ -33,10 +35,16 @@ export default function LevelZero() {
       });
   };
 
+  // level list build function
+  const levels = [];
+  for (let i = 1; i < 21; i++) {
+    levels.push(<LevelList LvlNum={i} />);
+  }
+
   return (
     <div className="level-zero">
       <form>
-        <h1>Level Zero</h1>
+        <h3>Character Builder</h3>
 
         <label>Name:</label>
         <input type="text" value={name} />
@@ -91,6 +99,7 @@ export default function LevelZero() {
           {/* fill these options with Classes*/}
         </select>
       </form>
+      {levels}
     </div>
   );
 }

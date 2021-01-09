@@ -1,7 +1,13 @@
 .level-zero {
   width: 25%;
-  height: 350px;
   background-color: rgb(236, 161, 131);
+  display: grid;
+  justify-items: center;
+}
+
+.level-zero > form {
+  justify-self: start;
+  margin: 5%;
 }
 
 .select-dropdown {
