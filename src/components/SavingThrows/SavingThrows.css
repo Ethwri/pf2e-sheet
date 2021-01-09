@@ -1,0 +1,15 @@
+.saves-list {
+  width: 30%;
+  background-color: lightgreen;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  place-items: center;
+}
+
+.individual-save {
+  display: flex;
+  align-content: flex-end;
+}
+.individual-save > label {
+  margin-right: auto;
+}
