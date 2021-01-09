@@ -37,7 +37,7 @@ const requestListener = (
       res.write(JSON.stringify(levelzero));
       res.end();
       break;
-    case '/SavingThrows':
+    case '/savingThrows':
       res.writeHead(200, { 'Content-Type': 'application/json' });
       res.write(JSON.stringify(SavingThrows));
       res.end();
