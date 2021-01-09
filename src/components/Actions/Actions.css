@@ -1,26 +1,33 @@
 .tabsList {
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
-  background-color: grey;
-  margin: 0px;
+  background-color: #9d9c9a;
+  margin: 5px 0 0 0;
   list-style-type: none;
   height: 30px;
   padding: 0px;
+  cursor: pointer;
 }
 
 .tabsList > .tab {
-  border: 3px solid rgb(97, 97, 97);
+  border: 3px solid #616161;
 }
 
 .tabsList > .selectedtab {
-  border: 3px solid rgb(97, 97, 97);
+  border: 3px solid #616161;
   border-bottom: 0px;
 }
 
 .tabsPanel {
-  background-color: grey;
+  background-color: #9d9c9a;
+  padding-left: 2px;
 }
 
 .tabsPanel > h2 {
   margin-top: 0px;
+}
+
+.react-tabs__tab-panel--selected {
+  border: 3px solid #616161;
+  border-top: 0px;
 }
