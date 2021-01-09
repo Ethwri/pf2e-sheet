@@ -11,9 +11,15 @@ import LevelList from './LevelList/LevelList';
 
 export default function LevelZero() {
   const [name, setName] = React.useState('');
-  const [ancestery, setAncestery] = React.useState(raceOptions.DWARF);
-  const [background, setBackground] = React.useState(BackgroundOptions.CASTLE);
-  const [charClass, setCharClass] = React.useState(ClassOptions.FIGHTER);
+  const [ancestery, setAncestery] = React.useState<raceOptions>(
+    raceOptions.DWARF
+  );
+  const [background, setBackground] = React.useState<BackgroundOptions>(
+    BackgroundOptions.CASTLE
+  );
+  const [charClass, setCharClass] = React.useState<ClassOptions>(
+    ClassOptions.FIGHTER
+  );
   const [experience, setExperience] = React.useState(0);
   React.useEffect(() => {
     getAttributes();
@@ -61,24 +67,11 @@ export default function LevelZero() {
           })}
           ;
         </select>
-        {/* <br />
-        <label>Heritage:</label>
-        <select
-          defaultValue="dwarf"
-          className="select-dropdown heritage-dropdown"
-        >
-          <option value="dwarf">Dwarf</option>
-          <option value="elf">Elf</option>
-          <option value="gnome">Gnome</option>
-          <option value="goblin">Goblin</option>
-          <option value="halfling">Halfling</option>
-          <option value="human">Human</option>
-        </select> */}
 
         <br />
         <label>Choose a Background:</label>
         <select defaultValue={background} className="select-dropdown">
-          {Object.values(raceOptions).map((value) => {
+          {Object.values(BackgroundOptions).map((value) => {
             return (
               <option key={value} value={value}>
                 {value}
@@ -89,15 +82,18 @@ export default function LevelZero() {
         </select>
         <br />
         <label>Choose a Class:</label>
-        <select defaultValue="dwarf" className="select-dropdown">
-          <option value="dwarf">Alchemist</option>
-          <option value="elf">Elf</option>
-          <option value="gnome">Gnome</option>
-          <option value="goblin">Goblin</option>
-          <option value="halfling">Halfling</option>
-          <option value="human">Human</option>
-          {/* fill these options with Classes*/}
+        <select defaultValue={charClass} className="select-dropdown">
+          {Object.values(ClassOptions).map((value) => {
+            return (
+              <option key={value} value={value}>
+                {value}
+              </option>
+            );
+          })}
+          ;
         </select>
+        <label>Experience:</label>
+        <input type="text" value={experience} />
       </form>
       {levels}
     </div>
