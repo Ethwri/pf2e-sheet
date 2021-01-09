@@ -6,12 +6,8 @@ import {
   ClassOptions
 } from '../../../src/lib/api/types';
 import './LevelZero.css';
-<<<<<<< HEAD
-import '../../layout.css';
-=======
 import './LevelList/LevelList';
 import LevelList from './LevelList/LevelList';
->>>>>>> 81637b3e5e932f92be120788306452eb52eccc44
 
 export default function LevelZero() {
   const [name, setName] = React.useState('');
