@@ -1,6 +1,6 @@
 .item-a {
   grid-area: header;
-  background-color: rgb(57, 59, 167);
+  background-color: rgb(157, 158, 169);
   height: 50px;
 }
 .item-b {
@@ -13,12 +13,12 @@
 
 .item-d {
   grid-area: action;
-  background-color: rgb(57, 59, 167);
+  /* background-color: rgb(57, 59, 167); */
 }
 
 .item-e {
   grid-area: sidebar;
-  background-color: rgb(165, 167, 57);
+  /* background-color: rgb(165, 167, 57); */
 }
 
 .item-f {

@@ -1,5 +1,5 @@
 .attribute-hotbar {
-  background-color: dimgrey;
+  /* background-color: dimgrey; */
   grid-template-columns: repeat(auto-fill, minmax(75px, 1fr));
   gap: 2%;
   display: grid;

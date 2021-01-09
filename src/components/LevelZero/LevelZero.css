@@ -1,6 +1,5 @@
 .level-zero {
-  width: 25%;
-  background-color: rgb(236, 161, 131);
+  /* background-color: rgb(236, 161, 131); */
   display: grid;
   justify-items: center;
 }
