@@ -1,0 +1,18 @@
+.level-box {
+  background-color: rgb(230, 157, 97);
+  border: 3px solid rgb(224, 95, 35);
+  border-radius: 2px;
+  padding: 5px;
+  width: 90%;
+  height: 2rem;
+  display: flex;
+  cursor: pointer;
+}
+
+.level-box > span {
+  font-weight: bold;
+}
+
+.active {
+  height: 6rem;
+}
