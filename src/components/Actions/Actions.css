@@ -1,7 +1,26 @@
 .tabsList {
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
+  background-color: grey;
+  margin: 0px;
+  list-style-type: none;
+  height: 30px;
+  padding: 0px;
 }
 
-.tab {
+.tabsList > .tab {
+  border: 3px solid rgb(97, 97, 97);
+}
+
+.tabsList > .selectedtab {
+  border: 3px solid rgb(97, 97, 97);
+  border-bottom: 0px;
+}
+
+.tabsPanel {
+  background-color: grey;
+}
+
+.tabsPanel > h2 {
+  margin-top: 0px;
 }

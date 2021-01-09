@@ -6,13 +6,21 @@ export default function Actions() {
   return (
     <Tabs>
       <TabList className="tabsList">
-        <Tab className="">Actions</Tab>
-        <Tab className="">Spells</Tab>
-        <Tab className="">Feats</Tab>
-        <Tab className="">Equipment</Tab>
+        <Tab selectedClassName="selectedtab" className="tab">
+          Actions
+        </Tab>
+        <Tab selectedClassName="selectedtab" className="tab">
+          Spells
+        </Tab>
+        <Tab selectedClassName="selectedtab" className="tab">
+          Feats
+        </Tab>
+        <Tab selectedClassName="selectedtab" className="tab">
+          Equipment
+        </Tab>
       </TabList>
 
-      <TabPanel>
+      <TabPanel className="tabsPanel">
         <h2>Actions</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
@@ -55,7 +63,7 @@ export default function Actions() {
           tortor.
         </p>
       </TabPanel>
-      <TabPanel>
+      <TabPanel className="tabsPanel">
         <h2>Spells</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
@@ -98,7 +106,7 @@ export default function Actions() {
           tortor.
         </p>
       </TabPanel>
-      <TabPanel>
+      <TabPanel className="tabsPanel">
         <h2>Feats</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
@@ -141,7 +149,7 @@ export default function Actions() {
           tortor.
         </p>
       </TabPanel>
-      <TabPanel>
+      <TabPanel className="tabsPanel">
         <h2>Equipment</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
