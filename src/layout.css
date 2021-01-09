@@ -1,0 +1,40 @@
+.item-a {
+  grid-area: header;
+  background-color: rgb(57, 59, 167);
+  height: 50px;
+}
+.item-b {
+  grid-area: level;
+}
+
+.item-c {
+  grid-area: skills;
+}
+
+.item-d {
+  grid-area: action;
+  background-color: rgb(57, 59, 167);
+}
+
+.item-e {
+  grid-area: sidebar;
+  background-color: rgb(165, 167, 57);
+}
+
+.item-f {
+  grid-area: health;
+}
+
+.item-g {
+  grid-area: ac;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 20% 20% 15% 15% 15% auto;
+  grid-template-rows: 50px 60px auto;
+  grid-template-areas:
+    'header header header header header header'
+    'level health health ac sidebar sidebar'
+    'level skills action action sidebar sidebar';
+}

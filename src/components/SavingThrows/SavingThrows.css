@@ -1,5 +1,5 @@
 .saves-list {
-  width: 30%;
+  /* width: 30%; */
   background-color: lightgreen;
   display: grid;
   grid-template-columns: 33% 33% 33%;

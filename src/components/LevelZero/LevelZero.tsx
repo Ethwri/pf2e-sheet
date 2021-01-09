@@ -6,6 +6,7 @@ import {
   ClassOptions
 } from '../../../src/lib/api/types';
 import './LevelZero.css';
+import '../../layout.css';
 
 export default function LevelZero() {
   const [name, setName] = React.useState('');

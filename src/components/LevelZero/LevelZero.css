@@ -1,5 +1,5 @@
 .level-zero {
-  width: 25%;
+  display: flex;
   height: 350px;
   background-color: rgb(236, 161, 131);
 }
