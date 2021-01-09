@@ -1,5 +1,6 @@
 import * as React from 'react';
 import './HealthBar.css';
+import Ac from '../AC/ArmorClass';
 import { HitpointsResponse } from 'src/lib/api/types';
 // import React, { useState } from 'react';
 
@@ -40,6 +41,7 @@ function HealthBar() {
       <small>
         {current}/{max}
       </small>
+      <Ac />
     </div>
   );
 }

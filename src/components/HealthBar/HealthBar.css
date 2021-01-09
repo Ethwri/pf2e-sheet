@@ -1,16 +1,29 @@
 .health-hotbar {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  text-align: center;
+  display: grid;
+  grid-template-columns: 90% 10%;
   /* background-color: silver; */
   height: 100%;
+  /* place-items: center;     This ruins the health bar  */
+  border: 2px solid black;
+  border-radius: 3px;
+}
+
+.ac {
+  border-left: 2px solid black;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 4;
 }
 
 .healthbar {
   display: flex;
   position: relative;
   max-width: 100%;
+  height: 5px;
 }
 
 .healthbar::before {

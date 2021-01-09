@@ -8,20 +8,19 @@ import Skills from './components/Skills/Skills';
 import SavingThrows from './components/SavingThrows/SavingThrows';
 import Action from './components/Actions/Actions';
 import './layout.css';
+import logo from './public/PF2Logo.png';
 
 ReactDOM.render(
   <div className="container">
     <div className="item-a">
-      <p>this is a header</p>
+      <img src={logo} />
+      <h2> Character Builder</h2>
     </div>
     <div className="item-b">
       <LevelZero />
     </div>
     <div className="item-f">
       <HealthBar />
-    </div>
-    <div className="item-g">
-      <Ac />
     </div>
     <div className="item-c">
       <AttributeHotbar />

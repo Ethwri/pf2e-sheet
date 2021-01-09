@@ -1,8 +1,11 @@
 .attribute-hotbar {
   /* background-color: dimgrey; */
-  grid-template-columns: repeat(auto-fill, minmax(75px, 1fr));
-  gap: 2%;
+  /* grid-template-columns: repeat(auto-fill, minmax(75px, 1fr)); */
   display: grid;
+  gap: 2%;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 49% 49%;
+  grid-template-rows: 1fr 1fr;
+  place-items: center;
+  padding: 5px;
+  margin: 5px 0;
 }

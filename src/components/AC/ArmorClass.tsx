@@ -1,5 +1,5 @@
 import * as React from 'react';
-import './Ac.css';
+
 import { acdcinitive } from 'src/lib/api/types';
 
 export default function Ac() {
