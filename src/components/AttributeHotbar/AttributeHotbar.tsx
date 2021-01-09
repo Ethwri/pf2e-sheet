@@ -33,7 +33,6 @@ export default class AttributeHotbar extends React.Component {
             modifier={attribute.modifier}
           />
         ))}
-        ;
       </div>
     );
   }

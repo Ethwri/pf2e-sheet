@@ -1,9 +1,8 @@
-.attribute-hotbar{
-    width: 50%;
-    height: 100px;
-    background-color: dimgrey;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(75px, 1fr));
-    gap: 5px;
-    
+.attribute-hotbar {
+  background-color: dimgrey;
+  grid-template-columns: repeat(auto-fill, minmax(75px, 1fr));
+  gap: 2%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 49% 49%;
 }

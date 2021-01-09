@@ -21,7 +21,7 @@ export default function Ac() {
   };
   return (
     <div className="ac">
-      <p>{Ac?.ac}</p>
+      <p>AC:{Ac?.ac}</p>
     </div>
   );
 }
