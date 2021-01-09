@@ -2,8 +2,10 @@
   /* width: 30%; */
   /* background-color: rgb(119, 158, 107); */
   display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
-  place-items: center;
+  grid-template-columns: 3fr 2fr 3fr 3fr;
+  padding: 3px 0 0 3px;
+  border: 2px solid black;
+  border-radius: 3px;
 }
 
 .skill-list > h5 {

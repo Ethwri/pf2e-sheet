@@ -1,9 +1,13 @@
 .saves-list {
   /* width: 30%; */
   /* background-color: lightgreen; */
+  border: 2px solid black;
+  border-radius: 3px;
+  margin: 10px 0;
   display: grid;
   grid-template-columns: 33% 33% 33%;
-  place-items: center;
+  padding: 3px 0 0 3px;
+  /* place-items: center; */
 }
 
 .individual-save {

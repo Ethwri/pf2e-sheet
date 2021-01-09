@@ -1,8 +1,11 @@
 .item-a {
   grid-area: header;
-  background-color: rgb(157, 158, 169);
-  height: 50px;
+  background-color: #522e2c;
+  height: 70px;
+  display: flex;
+  color: #fff;
 }
+
 .item-b {
   grid-area: level;
 }
@@ -25,16 +28,13 @@
   grid-area: health;
 }
 
-.item-g {
-  grid-area: ac;
-}
-
 .container {
+  background-image: linear-gradient(#cbae63, rgba(119, 120, 124, 0));
   display: grid;
-  grid-template-columns: 20% 20% 15% 15% 15% auto;
-  grid-template-rows: 50px 60px auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 70px 60px auto;
   grid-template-areas:
-    'header header header header header header'
-    'level health health ac sidebar sidebar'
-    'level skills action action sidebar sidebar';
+    'header header header header'
+    'level health health sidebar'
+    'level skills action sidebar';
 }
